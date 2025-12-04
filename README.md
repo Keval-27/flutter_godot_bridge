@@ -14,7 +14,7 @@ Flutter godot integration
 
 | Godot Game | Godot Start | Godot End | 
 |------------|-------------|-----------|
-| ![Godot Game](Screenshots/FlutterUI.png) | ![Godot Game](Screenshots/GameStart.png) | ![Godot End](Screenshots/GameEnd.png) |
+| ![Godot Game](Screenshots/GodotGame.png) | ![Godot Game](Screenshots/GameStart.png) | ![Godot End](Screenshots/GameEnd.png) |
 
 
 # Flutter Godot Bridge
