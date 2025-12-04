@@ -21,17 +21,23 @@ Flutter godot integration
 
 Flutter package for Godot game engine integration.
 
-## Features
-- Embed Godot games in Flutter apps
-- Bidirectional communication
-- Android/iOS support
+Overview: Embed Godot games inside Flutter apps for rich interactive experiences on Android and iOS.
 
-## Installation
+Features: Bidirectional communication between Flutter and Godot, embedding Godot scenes as Flutter widgets, and control customization.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android
+Installation: Add the package to Flutter, set up Godot export templates, and configure native Android/iOS settings.
+
+Usage: Simple Dart code to embed Godot, example Godot signals, and game lifecycle management.
+
+Architecture: Flutter UI layer communicates with native Godot engine via a bridge using JNI/FFI or platform channels.
+
+Performance: Tips on optimizing load times and managing memory.
+
+Known Limitations: Current issues with platform quirks and future improvements.
+
+Contributing: How to help improve the bridge and contribution guidelines.
+
+References: Links to Flutter, Godot docs, and integration tutorials.
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev), which offers tutorials,
