@@ -1,0 +1,74 @@
+name: flutter_godot_bridge
+description: High-performance bi-directional communication bridge between Flutter and Godot game engine with seamless UI integration and optimized performance.
+version: 0.1.0
+homepage: https://github.com/yourusername/flutter_godot_bridge
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.7
+  ffi: ^2.1.0
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  ffigen: ^19.1.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_godot_bridge
+        pluginClass: FlutterGodotBridgePlugin
+      ios:
+        pluginClass: FlutterGodotBridgePlugin
+
+# FFI configuration for generating native bindings
+ffigen:
+  name: 'NativeBindings'
+  description: 'Bindings for Flutter Godot Bridge native library'
+  output: 'lib/src/native_bindings_generated.dart'
+  headers:
+    entry-points:
+      - 'android/src/main/cpp/godot_bridge.h'
+  preamble: |
+    // Generated bindings for Flutter Godot Bridge
+    // ignore_for_file: always_specify_types
+    // ignore_for_file: camel_case_types
+    // ignore_for_file: non_constant_identifier_names
+  comments:
+    style: any
+    length: full
+
+# Topics for pub.dev
+topics:
+  - flutter
+  - godot
+  - game-engine
+  - cross-platform
+  - native-integration
+  - gaming
+  - performance
+
+# Funding information (optional)
+funding:
+  - https://github.com/sponsors/yourusername
+
+# Issue tracker
+issue_tracker: https://github.com/yourusername/flutter_godot_bridge/issues
+
+# Documentation
+documentation: https://github.com/yourusername/flutter_godot_bridge/wiki
+
+# Repository information
+repository: https://github.com/yourusername/flutter_godot_bridge
+
+# Screenshots for pub.dev (if you want to add them later)
+assets:
+  - assets/dodge_the_creep.pck

@@ -1,0 +1,17 @@
+name: flutter_godot_bridge_example
+description: Example app embedding Godot engine with flutter_godot_bridge package
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_godot_bridge:
+    path: ../  # path to your flutter_godot_bridge package
+
+  shared_preferences: ^2.2.2
+
+flutter:
+  uses-material-design: true
+  assets:
